@@ -138,8 +138,8 @@ const Home = () => {
    */
   const handleSearchMatch = (user) => {
     return (
-      user.name.first.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.name.last.toLowerCase().includes(searchTerm.toLowerCase())
+      user.name.first.toLowerCase() + user.name.last.toLowerCase() ===
+      searchTerm.toLowerCase().replace(" ", "")
     );
   };
 
