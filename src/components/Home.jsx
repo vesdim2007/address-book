@@ -14,9 +14,9 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import HomeHeader from "./headers/HomeHeader";
 import Loader from "./reusable/Loader";
-import { SLayout } from "./styles/Layout.style";
-import { SMessage } from "./styles/Home.style";
-import { fetchUsers, fetchNationalUsers } from "./actions/users";
+import { SLayout } from "../styles/Layout.style";
+import { SMessage } from "../styles/Home.style";
+import { fetchUsers, fetchNationalUsers } from "../actions/users";
 import UserListItem from "./reusable/UserListItem";
 
 const Home = () => {
@@ -138,8 +138,8 @@ const Home = () => {
    */
   const handleSearchMatch = (user) => {
     return (
-      user.name.first.toLowerCase() === searchTerm.toLowerCase() ||
-      user.name.last.toLowerCase() === searchTerm.toLowerCase()
+      user.name.first.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.name.last.toLowerCase().includes(searchTerm.toLowerCase())
     );
   };
 

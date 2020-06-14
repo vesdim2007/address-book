@@ -12,7 +12,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { SHeader, SButton } from "../styles/Header.style";
+import { SHeader, SButton } from "../../styles/Header.style";
 
 const SettingsHeader = () => {
   return (

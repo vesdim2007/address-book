@@ -46,10 +46,7 @@ export default (state = initialState, action) => {
      * This action is used to get the fetched users from the api
      */
     case "GET_USERS":
-      return {
-        ...state,
-        users: [...state.users, ...action.payload],
-      };
+      return { ...state, users: [...state.users, ...action.payload] };
     /**
      * Action Creator - saveNationality
      * This action is used to get the selected nationality from the Settings Page

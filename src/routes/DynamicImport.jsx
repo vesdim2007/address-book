@@ -15,9 +15,9 @@ import React, { lazy, Suspense } from "react";
 /**
  * Lazy Loading of Settings Page
  *
- * @type {import('../Settings')}
+ * @type {import('../components/Settings')}
  */
-const SettingsComponent = lazy(() => import("../Settings"));
+const SettingsComponent = lazy(() => import("../components/Settings"));
 
 const DynamicImport = () => {
   return (

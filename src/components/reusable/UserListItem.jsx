@@ -32,7 +32,7 @@
 import React, { lazy, useState, Suspense } from "react";
 import { ThemeProvider } from "styled-components";
 import Grid from "styled-components-grid";
-import { SDetailsButton } from "../styles/UserListItem.style";
+import { SDetailsButton } from "../../styles/UserListItem.style";
 import { ModalProvider } from "styled-react-modal";
 
 /**

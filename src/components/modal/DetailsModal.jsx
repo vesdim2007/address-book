@@ -31,7 +31,7 @@ import {
   SModalContent,
   SModalColumn,
   SModalData,
-} from "../styles/Modal.style";
+} from "../../styles/Modal.style";
 
 export default function DetailsModal({
   isOpen,

@@ -25,7 +25,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { SHeader, SearchBar, SButton } from "../styles/Header.style";
+import { SHeader, SearchBar, SButton } from "../../styles/Header.style";
 
 const HomeHeader = (props) => {
   return (

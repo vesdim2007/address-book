@@ -14,9 +14,9 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import SettingsHeader from "./headers/SettingsHeader";
 import { useDispatch } from "react-redux";
-import { saveNationality } from "./actions/users";
-import { SLayout } from "./styles/Layout.style";
-import { SButtonsDiv, SNatButton, SInfo } from "./styles/Settings.style";
+import { saveNationality } from "../actions/users";
+import { SLayout } from "../styles/Layout.style";
+import { SButtonsDiv, SNatButton, SInfo } from "../styles/Settings.style";
 
 const Settings = () => {
   /**

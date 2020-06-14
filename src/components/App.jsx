@@ -1,10 +1,10 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import DynamicImport from "./routes/DynamicImport";
+import DynamicImport from "../routes/DynamicImport";
 import Home from "./Home";
-import Global from "./styles/Global";
-import configureStore from "./store/configureStore";
+import Global from "../styles/Global";
+import configureStore from "../store/configureStore";
 
 /**
  * The configured store is passed as prop to the React- Redux Provider

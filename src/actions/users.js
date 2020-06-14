@@ -14,7 +14,7 @@ import axios from "axios";
  * @return {Action}
  */
 
-const fetchFailed = (message) => {
+export const fetchFailed = (message) => {
   return {
     type: "FETCH_DATA_FAILED",
     payload: message,
@@ -27,7 +27,7 @@ const fetchFailed = (message) => {
  * @param {Object[] | []} users: fetched users from the api
  * @return {Action}
  */
-const getUsers = (users) => {
+export const getUsers = (users) => {
   return {
     type: "GET_USERS",
     payload: users,
